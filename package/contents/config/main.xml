@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0 http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+    <kcfgfile name=""/>
+    <group name="General">
+        <!-- Lista de tarefas serializada em JSON: [{ "id": 1, "text": "..." }] -->
+        <entry name="tasks" type="String">
+            <default>[]</default>
+        </entry>
+        <!-- Próximo id a ser usado; só aumenta -->
+        <entry name="nextId" type="Int">
+            <default>1</default>
+        </entry>
+        <!-- Título exibido no topo; editado pelo usuário em Configurar... -->
+        <entry name="title" type="String">
+            <default></default>
+        </entry>
+        <!-- Cor de destaque (bolinha concluída); escolhida na paleta de Configurar... -->
+        <entry name="accentColor" type="Color">
+            <default>#f97316</default>
+        </entry>
+        <!-- Tema do widget: true = escuro, false = claro; escolhido em Configurar... -->
+        <entry name="darkMode" type="Bool">
+            <default>true</default>
+        </entry>
+        <!-- Ícone ao lado do título: nome do arquivo em contents/icons sem ".svg"; vazio = nenhum -->
+        <entry name="icon" type="String">
+            <default></default>
+        </entry>
+    </group>
+</kcfg>
