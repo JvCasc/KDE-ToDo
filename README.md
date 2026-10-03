@@ -1,28 +1,28 @@
 # KDE ToDo
 
-Widget de lista de tarefas minimalista para a área de trabalho do KDE Plasma 6, inspirado no widget de Lembretes do iPhone.
+A minimalist to-do list widget for the KDE Plasma 6 desktop, inspired by the iPhone Reminders widget.
 
-![KDE ToDo em funcionamento](docs/demo.gif)
+![KDE ToDo in action](docs/demo.gif)
 
-## Como funciona
+## How it works
 
-- Passe o mouse sobre o widget e clique em **+** para criar uma tarefa. Enter salva.
-- Clique na bolinha para concluir: a tarefa fica riscada e some em 2 segundos. Clicar de novo nesse intervalo desfaz.
-- Tarefa concluída é apagada. Não tem histórico.
-- As tarefas ficam salvas na configuração do widget e sobrevivem a reboot.
+- Hover over the widget and click **+** to add a task. Press Enter to save.
+- Click the circle to complete a task: it gets struck through and disappears after 2 seconds. Click again within that time to undo.
+- Completed tasks are deleted. There is no history.
+- Tasks are stored in the widget's configuration and survive reboots.
 
-## Personalização
+## Customization
 
-Em **Configurar...** (botão direito no widget):
+Right-click the widget → **Configure...**:
 
-- **Título**: opcional, aparece no topo.
-- **Ícone**: nenhum, chama, raio, estrela, coração, alvo ou livro.
-- **Cor de destaque**: laranja, azul, verde, roxo, rosa ou vermelho.
-- **Tema**: escuro ou claro, independente do tema do sistema.
+- **Title**: optional, shown at the top.
+- **Icon**: none, flame, zap, star, heart, target or book.
+- **Accent color**: orange, blue, green, purple, pink or red.
+- **Theme**: dark or light, independent of the system theme.
 
-## Instalação
+## Installation
 
-Requer KDE Plasma 6.
+Requires KDE Plasma 6.
 
 ```sh
 git clone https://github.com/JvCasc/KDE-ToDo.git
@@ -30,34 +30,34 @@ cd KDE-ToDo
 kpackagetool6 -t Plasma/Applet -i package
 ```
 
-Depois, clique com o botão direito na área de trabalho → **Adicionar widgets** → procure por **KDE ToDo List**.
+Then right-click the desktop → **Add Widgets...** → search for **KDE ToDo List**.
 
-### Atualizar
+### Update
 
 ```sh
 git pull
 kpackagetool6 -t Plasma/Applet -u package
 ```
 
-Se a mudança não aparecer, reinicie o Plasma:
+If the change doesn't show up, restart Plasma:
 
 ```sh
 systemctl --user restart plasma-plasmashell
 ```
 
-### Remover
+### Uninstall
 
 ```sh
 kpackagetool6 -t Plasma/Applet -r com.jvcasc.kdetodo
 ```
 
-Remover o widget da área de trabalho apaga as tarefas dele.
+Removing the widget from the desktop also deletes its tasks.
 
-## Créditos
+## Credits
 
-- Fonte [Inter](https://rsms.me/inter/), licença SIL OFL 1.1
-- Ícones [Lucide](https://lucide.dev/), licença ISC
+- [Inter](https://rsms.me/inter/) font, SIL OFL 1.1
+- [Lucide](https://lucide.dev/) icons, ISC License
 
-## Licença
+## License
 
 GPL-2.0-or-later

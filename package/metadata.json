@@ -2,7 +2,7 @@
     "KPlugin": {
         "Id": "com.jvcasc.kdetodo",
         "Name": "KDE ToDo List",
-        "Description": "To do list minimalist",
+        "Description": "Minimalist to-do list",
         "Icon": "view-task",
         "Version": "0.1",
         "License": "GPL-2.0+",

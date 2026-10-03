@@ -307,7 +307,7 @@ PlasmoidItem {
                             border.color: root.boxBorderColor
                         }
                         visible: root.adding
-                        placeholderText: "Nova tarefa"
+                        placeholderText: "New task"
                         font.family: interMedium.name
                         font.weight: Font.Medium
                         font.pointSize: root.taskPointSize

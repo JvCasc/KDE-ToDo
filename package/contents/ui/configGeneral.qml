@@ -23,24 +23,24 @@ KCM.SimpleKCM {
     Kirigami.FormLayout {
         QQC2.TextField {
             id: titleField
-            Kirigami.FormData.label: "Título:"
-            placeholderText: "Sem título"
+            Kirigami.FormData.label: "Title:"
+            placeholderText: "No title"
         }
 
         QQC2.RadioButton {
-            Kirigami.FormData.label: "Tema:"
-            text: "Escuro"
+            Kirigami.FormData.label: "Theme:"
+            text: "Dark"
             checked: cfg_darkMode
             onToggled: cfg_darkMode = true
         }
         QQC2.RadioButton {
-            text: "Claro"
+            text: "Light"
             checked: !cfg_darkMode
             onToggled: cfg_darkMode = false
         }
 
         RowLayout {
-            Kirigami.FormData.label: "Cor de destaque:"
+            Kirigami.FormData.label: "Accent color:"
             spacing: Kirigami.Units.smallSpacing
 
             Repeater {
@@ -75,7 +75,7 @@ KCM.SimpleKCM {
         }
 
         RowLayout {
-            Kirigami.FormData.label: "Ícone:"
+            Kirigami.FormData.label: "Icon:"
             spacing: Kirigami.Units.smallSpacing
 
             Repeater {
