@@ -1,24 +1,22 @@
 # KDE ToDo
 
-A minimalist to-do list widget for the KDE Plasma 6 desktop, inspired by the iPhone Reminders widget.
+A minimalist to-do list widget for the KDE Plasma 6 desktop.
 
-![KDE ToDo in action](docs/demo.gif)
+![KDE ToDo in action](docs/videoGif.gif)
 
 ## How it works
 
 - Hover over the widget and click **+** to add a task. Press Enter to save.
-- Click the circle to complete a task: it gets struck through and disappears after 2 seconds. Click again within that time to undo.
+- Click the circle to complete a task.
 - Completed tasks are deleted. There is no history.
-- Tasks are stored in the widget's configuration and survive reboots.
 
 ## Customization
 
 Right-click the widget → **Configure...**:
 
-- **Title**: optional, shown at the top.
-- **Icon**: none, flame, zap, star, heart, target or book.
+- **Title**: shown at the top.
 - **Accent color**: orange, blue, green, purple, pink or red.
-- **Theme**: dark or light, independent of the system theme.
+- **Theme**: dark or light.
 
 ## Installation
 
@@ -50,8 +48,6 @@ systemctl --user restart plasma-plasmashell
 ```sh
 kpackagetool6 -t Plasma/Applet -r com.jvcasc.kdetodo
 ```
-
-Removing the widget from the desktop also deletes its tasks.
 
 ## Credits
 
