@@ -1,4 +1,4 @@
-# KDE ToDo
+# 🔥 KDE ToDo
 
 A minimalist to-do list widget for the KDE Plasma 6 desktop.
 
