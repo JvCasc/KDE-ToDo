@@ -1,0 +1,21 @@
+# Cache de QML compilado e config local do language server
+*.qmlc
+*.jsc
+.qmlls.ini
+
+# Pacote empacotado para distribuição (gerado a partir de package/)
+*.plasmoid
+
+# Configurações locais do Claude Code
+.claude/settings.local.json
+
+# Editores e sistema
+.vscode/
+.idea/
+*.swp
+*~
+.directory
+
+# Notas locais do projeto e do aprendizado (não vão para o repositório público)
+CLAUDE.md
+.vibe-wise/
