@@ -2,7 +2,9 @@
 
 A minimalist to-do list widget for the KDE Plasma 6 desktop.
 
-![KDE ToDo in action](docs/videoGif.gif)
+<p align="center">
+  <img src="docs/videoGif.gif" alt="KDE ToDo in action">
+</p>
 
 ## How it works
 
